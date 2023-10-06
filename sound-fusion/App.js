@@ -1,6 +1,7 @@
-import { StatusBar } from 'expo-status-bar';
+import {  } from 'expo-status-bar';
 import React, { useState } from 'react';
 import { StyleSheet, Text, SafeAreaView, View, Image, Button, Pressable } from 'react-native';
+import StatusBar from './StatusBar';
 
 export default function App() {
   let [test, setTest] = useState("Sound Fuision")
@@ -8,7 +9,8 @@ export default function App() {
     setTest("abc")
   }
   return (
-    <SafeAreaView style={styles.container}>
+    <View style={styles.container}>
+      <StatusBar backgroundColor="#000000" barStyle="light-content" />
       <View style={styles.topBar.bar}>
         <Image style={styles.topBar.image} source={require("./resources/icon.png")}></Image>
         <Text style={styles.topBar.text}>{test}</Text>
@@ -16,7 +18,7 @@ export default function App() {
           <Image style={styles.topBar.image} source={require("./resources/settings.png")}></Image>
         </Pressable>
       </View>
-    </SafeAreaView>
+    </View>
   );
 }
 
@@ -37,7 +39,8 @@ const styles = StyleSheet.create({
     },
     image: {
       width: 50,
-      height: 50
+      height: 50,
+      borderRadius: 25
     },
     text: {
       color: "white",
