@@ -1,0 +1,10 @@
+{
+  "expo": {
+    "name": "sound-fusion",
+    "slug": "sound-fusion",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
