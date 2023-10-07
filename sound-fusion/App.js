@@ -1,4 +1,3 @@
-import {  } from 'expo-status-bar';
 import React, { useState } from 'react';
 import { StyleSheet, Text, SafeAreaView, View, Image, Button, Pressable } from 'react-native';
 import StatusBar from './StatusBar';
